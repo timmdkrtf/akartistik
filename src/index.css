@@ -1,0 +1,635 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .navbar{
+    padding: 20px 0;
+    box-shadow: 0 5px 30px 0 #8e8e8e;
+    background-color: #ffffff;
+    opacity: 0.9;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .navbar.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .navbar.hide {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .navbar a img{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    opacity: 1 !important;
+  }
+  
+  .navbar .collapse ul li{
+    font-family: "Lato", serif;
+    padding: 0 5px;
+  }
+
+  .cover{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background-image: url('../src/assets/image/bg/bg1.png');
+  }
+
+  .cover .content-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .cover .content-container .content-center{
+    width: fit-content;
+  }
+
+  .cover .content-center img{
+    width: 300px;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px #8e8e8e;
+    z-index: 4;
+  }
+
+  .cover .content-container .content-center p{
+    text-align: center;
+    width: fit-content;
+    margin: 15px auto 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 0 #A7A376;
+    padding: 8px 20px 8px 20px;
+    color: #ffffff;
+    background-color: #ff7f00;
+    z-index: 5;
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+  }
+
+  .cover .slider-container{
+    margin: 10px 0 0 0;
+  }
+
+  .cover .slider-container img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .cover .slider-container .slick-slide {
+    padding: 0 8px;
+  }
+
+  .about-pt{
+    padding: 80px 0 100px 0;
+    position: relative;
+  }
+
+  .about-pt .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-pt .content{
+    width: 70%;
+    position: relative;
+  }
+
+  .about-pt .content::after{
+    content: "";
+    position: absolute;
+    background-image: url('../src/assets/elemen/tringale-right-cream.png');
+    width: 140px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: -40px;
+    transform: scaleX(-1);
+  }
+
+  .about-pt .content h2{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #ff7f00;
+    position: relative;
+    display: inline-block;
+  }
+
+  .about-pt .content h2::before{
+    content: "";
+    position: absolute;
+    background-image: url('../src/assets/elemen/tringale-right-orange.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 30px;
+    left: -40px;
+    top: 6px;
+  }
+
+  .about-pt .content .text p{
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+  }
+
+  .about-us{
+    height: 700px;
+    box-shadow: 0 0 10px 0 #919191;
+    z-index: 1;
+    position: relative;
+    background-image: url('../src/assets/image/bg/bg5.png');
+  }
+
+  .about-us .row{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .about-us .row .content-left{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .about-us .row .content-left::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 2;
+  }
+
+  .about-us .row .content-left .cover-image{
+    width: 70%;
+    height: 400px;
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 5px solid #A7A376;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .about-us .row .content-left .cover-image img{
+    width: 350px;
+    margin: 30px 0 0 -60px;
+  }
+
+  .about-us .row .content-left .title{
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  .about-us .row .content-left .title h4{
+    font-family: "League Spartan", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    color: #ff7f00;
+  }
+
+  .about-us .row .content-left .title h5{
+    font-family: "Open Sans", serif;
+    margin: 5px 0 0 0;
+    font-size: 18px;
+    color: #191919;
+    opacity: 0.9;
+  }
+
+  .about-us .row .content-center{
+    width: 34%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .about-us .row .content-center::after{
+    content: "";
+    position: absolute;
+    background-color: #ff7f00;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 2;
+  }
+
+  .about-us .row .content-center .title h2{
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .about-us .row .content-center .title h2 span{
+    font-size: 50px;
+    font-weight: 400;
+  }
+
+  .about-us .row .content-right{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .about-us .row .content-right::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 2;
+  }
+
+  .about-us .row .content-right .cover-image{
+    width: 70%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 5px solid #A7A376;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .about-us .row .content-right .cover-image img{
+    width: 400px;
+    margin: 35px 0 0 -10px;
+  }
+
+  .about-us .row .content-right .title{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+    z-index: 3;
+  }
+
+  .about-us .row .content-right .title h4{
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    color: #ff7f00
+  }
+
+  .about-us .row .content-right .title h5{
+    font-family: "Open Sans", serif;
+    margin: 5px 0 0 0 ;
+    font-size: 18px;
+    color: #191919;
+    opacity: 0.9;
+  }
+
+  .brand {
+    padding: 130px 0 180px 0;
+    position: relative;
+  }
+
+  .brand::after{
+    content: "";
+    position: absolute;
+    background-image: url('../src/assets/elemen/elemen1.png');
+    width: 120px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .brand .container .row{
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .brand .container .row .title h2{
+    font-family: "League Spartan", sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #ff7f00;
+    border-radius: 10px;
+    padding: 8px 20px;
+    position: relative;
+  }
+
+  .brand .container .row .title h2::before{
+    content: "";
+    position: absolute;
+    background-image: url('../src/assets/elemen/tringale-right-orange.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 30px;
+    left: -40px;
+    top: 12px;
+  }
+
+  .brand .container .row .title h2::after{
+    content: "";
+    position: absolute;
+    background-image: url('../src/assets/elemen/tringale-right-orange.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 30px;
+    right: -40px;
+    top: 12px;
+    transform: scaleX(-1);
+  }
+  
+  .brand .container .row .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    gap: 70px;
+  }
+  
+  .brand .container .row .content a img{
+    width: 200px;
+  }
+
+  .footer{
+    background-color: #A7A376;
+    color: #ffffff;
+    padding: 30px 0;
+  } 
+  
+  .footer .text-center p{
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .about-us .row .content-left .cover-image{
+      width: 90%;
+    }
+    .about-us .row .content-right .cover-image{
+      width: 90%;
+    }
+
+    .about-us{
+      height: 650px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .about-pt{
+      padding: 90px 0;
+      background-position: 20% 70%;
+    }
+
+    .about-pt .container .content{
+      width: 85%;
+    }
+
+    .about-us .row .content-left .cover-image{
+      width: 95%;
+      height: 300px;
+    }
+
+    .about-us .row .content-left .cover-image img{
+      width: 300px;
+      margin: 10px 0 0 -30px;
+    }
+
+    .about-us .row .content-right .cover-image{
+      width: 95%;
+      height: 300px;
+    }
+
+    .about-us .row .content-right .cover-image img{
+      width: 280px;
+      margin: 30px 0 0 -10px;
+    }
+
+    .about-us{
+      height: 550px;
+    }
+
+    .about-us .row .content-left .title h4{
+      font-size: 20px;
+    }
+
+    .about-us .row .content-left .title h5{
+      font-size: 16px;
+    }
+
+    .about-us .row .content-right .title h4{
+      font-size: 20px;
+    }
+
+    .about-us .row .content-right .title h5{
+      font-size: 16px;
+    }
+
+    .about-us .row .content-center .title h2{
+      font-size: 28px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-pt .container .content{
+      width: 100%;
+    }
+
+    .about-pt{
+      padding: 90px 0;
+      background-position: 25% 80%;
+    }
+
+    .about-pt .content h2::before{
+      display: none;
+    }
+
+    .about-us{
+      height: fit-content;
+      padding: 0 0 70px 0;
+    }
+
+    .about-us .row{
+      width: 100%;
+      flex-direction: row;
+      gap: 60px 25px;
+      margin: 0 -24px 0 0;
+    }
+
+    .about-us .row .content-center{
+      width: 100%;
+      order: -1;
+      padding: 30px 0;
+    }
+
+    .about-us .row .content-left{
+      width: calc(50% - 30px);
+      padding: 0;
+      position: static;
+    }
+
+    .about-us .row .content-right{
+      width: calc(50% - 30px);
+      padding: 0;
+    }
+
+    .about-us .row .content-right::after{
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+    }
+
+    .about-us .row .content-right .cover-image img{
+      width: 280px;
+      margin: 30px 0 0 20px;
+    }
+
+    .brand {
+      padding: 100px 0 150px 0;
+      position: relative;
+    }
+
+    .brand .container .row{
+      gap: 60px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .cover .slider-container img {
+      height: 140px;
+    }
+
+    .about-us .row .content-left{
+      width: 80%;
+    }
+    .about-us .row .content-right{
+      width: 80%;
+    }
+
+    .about-us .row .content-left .cover-image img{
+      width: 350px;
+      margin: 10px 0 0 -20px;
+    }
+
+    .about-us .row .content-right .cover-image img{
+      width: 400px;
+      margin: 20px 0 0 -20px;
+    }
+    
+    .brand::after{
+      content: "";
+      position: absolute;
+      background-image: url('../src/assets/elemen/elemen1.png');
+      width: 100px;
+      height: 70px;
+    }
+
+    .brand .container .row .title h2::before{
+      top: 10px;
+    }
+  
+    .brand .container .row .title h2::after{
+      top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .cover .content-container .content-center img{
+      width: 250px;
+    }
+
+    .cover .content-container .content-center p{
+      font-size: 16px;
+    }
+
+    .about-pt .container .content h2{
+      font-size: 28px;
+    }
+
+    .about-pt .container .content .text p{
+      font-size: 14px;
+    }
+
+    .about-us .row .content-left{
+      width: 100%;
+    }
+    .about-us .row .content-right{
+      width: 100%;
+    }
+    .about-us .row .content-left .cover-image img{
+      width: 350px;
+      margin: 10px 0 0 -50px;
+    }
+
+    .about-us .row .content-right .cover-image img{
+      width: 400px;
+      margin: 20px 0 0 -50px;
+    }
+
+    .brand .container .row .title h2::before{
+      left: -35px;
+    }
+  
+    .brand .container .row .title h2::after{
+      right: -35px;
+    }
+
+    .footer .container .text-center p{
+      font-size: 11px;
+    }
+  
+  }
