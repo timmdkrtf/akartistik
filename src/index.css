@@ -437,7 +437,6 @@ body{
     padding: 50px 0 0 0;
     color: white;
     position: relative;
-    box-shadow: 0 -2px 5px 0 grey;
   }
 
   footer::after{
@@ -454,22 +453,30 @@ body{
   footer .row {
     position: relative;
     z-index: 3;
+    padding-bottom: 8px;
   }
   
   footer .row .col-lg-5 h2{
     font-family: "Lato", sans-serif;
     font-weight: 600;
-    margin: 0 0 25px 0;
+    margin: 0 0 15px 0;
   }
 
   footer .row .col-lg-5 ul li{
     font-family: "Open Sans", serif;
+    padding: 5px 0;
+  }
+
+  footer .bottom p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
   }
 
   footer .bottom{
     position: relative;
     z-index: 3;
-    font-family: "Open Sans", serif;
   }
 
 

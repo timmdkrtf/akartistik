@@ -21,7 +21,7 @@ export default function AboutUs(){
                             <br/>
                             <span>&</span>
                             <br/>
-                            Direksi Utama
+                            Direktur Utama
                         </h2>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ export default function AboutUs(){
                     </div>
                     <div className="title">
                         <h4>Novi</h4>
-                        <h5>Direksi Utama</h5>
+                        <h5>Direktur Utama</h5>
                     </div>
                 </div>
             </div>
