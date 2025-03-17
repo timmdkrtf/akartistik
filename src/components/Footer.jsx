@@ -17,19 +17,19 @@ export default function Footer(){
                             </li>
                             <li className="">
                                 <a href="tel:+622518632170" target="_blank" style={{color: "white", textDecoration: "none"}}>
-                                    <BsFillTelephoneFill className="fs-5" style={{ margin:"-3px 20px 0 0" }} />
+                                    <BsFillTelephoneFill className="fs-5" style={{ margin:"-3px 15px 0 0" }} />
                                     +62 251 8632 170
                                 </a>
                             </li>
                             <li className="">
                                 <a href="https://api.whatsapp.com/send?phone=6281232301060" target="_blank" style={{color: "white", textDecoration: "none"}}>
-                                    <BsWhatsapp className="fs-5" style={{ margin:"-3px 20px 0 0" }} />
+                                    <BsWhatsapp className="fs-5" style={{ margin:"-3px 15px 0 0" }} />
                                     +62 812 3230 1060
                                 </a>
                             </li>
                             <li className="">
                                 <a href="mailto:contact@apostrof.co.id" target="_blank" style={{color: "white", textDecoration: "none"}}>
-                                    <BsFillEnvelopeFill className="fs-5" style={{ margin:"-3px 20px 0 0" }} />
+                                    <BsFillEnvelopeFill className="fs-5" style={{ margin:"-3px 15px 0 0" }} />
                                     contact@karyart.co.id
                                 </a>
                             </li>
