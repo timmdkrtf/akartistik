@@ -1,28 +1,20 @@
-import NoviPhoto from "../assets/image/photo/novi.png"
-import YeniPhoto from "../assets/image/photo/yeni.png"
+import NoviPhoto from "../assets/image/photo/Frame 7.png"
+import YeniPhoto from "../assets/image/photo/Frame 8.png"
 
 export default function AboutUs(){
     return(
         <div className="about-us">
+            <div className="title">
+                <h2><span className="dewan">Dewan</span> <span>Komisaris</span> dan <span>Direksi</span></h2>
+            </div>
             <div className="row">
                 <div className="content-left">
                     <div className="cover-image">
                         <img src={YeniPhoto} alt="" />
                     </div>
                     <div className="title">
-                        <h4>Yeni</h4>
-                        <h5>Dewan Komisaris</h5>
-                    </div>
-                </div>
-                <div className="content-center">
-                    <div className="title">
-                        <h2>
-                            Dewan Komisaris
-                            <br/>
-                            <span>&</span>
-                            <br/>
-                            Direktur Utama
-                        </h2>
+                        <h4>Yeni Nuraeni</h4>
+                        <h5>Komisaris Utama</h5>
                     </div>
                 </div>
                 <div className="content-right">
@@ -30,7 +22,7 @@ export default function AboutUs(){
                         <img src={NoviPhoto} alt="" />
                     </div>
                     <div className="title">
-                        <h4>Novi</h4>
+                        <h4>Novi Agustin Samanti</h4>
                         <h5>Direktur Utama</h5>
                     </div>
                 </div>

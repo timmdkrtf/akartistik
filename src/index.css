@@ -1,4 +1,4 @@
-/* .landing {
+.landing {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -20,7 +20,7 @@
 
 .landing .content img{
   width: 250px;
-} */
+}
 
 body{
     margin: 0;
@@ -64,7 +64,16 @@ body{
     overflow: hidden;
     position: relative;
     z-index: 2;
-    background-image: url('../src/assets/image/bg/bg1.png');
+    background-size: cover;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
   }
 
   .cover .content-container{
@@ -86,9 +95,7 @@ body{
   .cover .content-center img{
     width: 300px;
     padding: 30px 25px;
-    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 2px #8e8e8e;
     z-index: 4;
   }
 
@@ -97,7 +104,7 @@ body{
     width: fit-content;
     margin: 15px auto 0 auto;
     border-radius: 5px;
-    box-shadow: 0 4px 0 0 #A7A376;
+    box-shadow: 0 4px 0 0 #8e8e8e;
     padding: 8px 20px 8px 20px;
     color: #ffffff;
     background-color: #ff7f00;
@@ -179,178 +186,142 @@ body{
   }
 
   .about-us{
-    height: 700px;
+    padding: 70px 0;
     box-shadow: 0 0 10px 0 #919191;
     z-index: 1;
     position: relative;
     background-image: url('../src/assets/image/bg/bg5.png');
+    background-size: cover;
+  }
+
+  .about-us::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    z-index: -1;
+  }
+
+  .about-us .title{
+    text-align: center;
+  }
+
+  .about-us .title h2{
+    font-family: "Lato", serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 auto 50px auto;
+    padding: 15px 20px;
+    position: relative;
+    color: #8e8e8e;
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 15px;
+  }
+
+  .about-us .title h2 span{
+    color: #FF7F00;
   }
 
   .about-us .row{
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+    margin: 0;
   }
 
   .about-us .row .content-left{
-    width: 33%;
+    width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
-    position: relative;
-  }
-
-  .about-us .row .content-left::after{
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: 2;
-  }
-
-  .about-us .row .content-left .cover-image{
-    width: 70%;
-    height: 400px;
-    background-color: #ffffff;
-    overflow: hidden;
-    border: 5px solid #A7A376;
-    border-radius: 10px;
-    position: relative;
-    z-index: 3;
   }
 
   .about-us .row .content-left .cover-image img{
-    width: 350px;
-    margin: 30px 0 0 -60px;
+    width: 400px;
+    margin: 0 0 0 -40px;
   }
 
   .about-us .row .content-left .title{
+    color: #000000;
     width: 100%;
-    margin: 20px 0 0 0;
-    text-align: center;
-    position: relative;
-    z-index: 3;
+    text-align: start;
+    background-color: #ffffff;
+    transform: translate(130px, -60px);
+    padding: 30px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 4px 4px 0 0 #A7A376;
   }
 
   .about-us .row .content-left .title h4{
-    font-family: "League Spartan", sans-serif;
+    font-family: "Lato", serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0;
     position: relative;
     display: inline-block;
-    color: #ff7f00;
+    color: #FF7F00;
+    font-size: 26px;
   }
 
   .about-us .row .content-left .title h5{
     font-family: "Open Sans", serif;
     margin: 5px 0 0 0;
-    font-size: 18px;
-    color: #191919;
+    font-size: 20px;
+    color: #8e8e8e;
     opacity: 0.9;
   }
 
-  .about-us .row .content-center{
-    width: 34%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-  }
-
-  .about-us .row .content-center::after{
-    content: "";
-    position: absolute;
-    background-color: #ff7f00;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.6;
-    z-index: 2;
-  }
-
-  .about-us .row .content-center .title h2{
-    color: #ffffff;
-    font-family: "Lato", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 55px;
-    position: relative;
-    z-index: 3;
-  }
-
-  .about-us .row .content-center .title h2 span{
-    font-size: 50px;
-    font-weight: 400;
-  }
-
   .about-us .row .content-right{
-    width: 33%;
+    width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
     flex-direction: column;
-    position: relative;
-  }
-
-  .about-us .row .content-right::after{
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: 2;
-  }
-
-  .about-us .row .content-right .cover-image{
-    width: 70%;
-    height: 400px;
-    overflow: hidden;
-    background-color: #ffffff;
-    border: 5px solid #A7A376;
-    border-radius: 10px;
-    position: relative;
-    z-index: 3;
+    text-align: end;
+    padding-right: 0;
   }
 
   .about-us .row .content-right .cover-image img{
     width: 400px;
-    margin: 35px 0 0 -10px;
+    margin: 15px 0 0 0;
   }
 
   .about-us .row .content-right .title{
+    color: #000000;
     width: 100%;
-    text-align: center;
-    margin: 20px 0 0 0;
-    z-index: 3;
+    text-align: end;
+    background-color: #ffffff;
+    transform: translate(-70px, -70px);
+    padding: 25px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: -4px 4px 0 0 #A7A376;
   }
 
   .about-us .row .content-right .title h4{
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0;
-    color: #ff7f00
+    color: #FF7F00;
+    font-size: 26px;
   }
 
   .about-us .row .content-right .title h5{
     font-family: "Open Sans", serif;
-    margin: 5px 0 0 0 ;
-    font-size: 18px;
-    color: #191919;
+    margin: 7px 0 0 0 ;
+    font-size: 20px;
+    color: #8e8e8e;
     opacity: 0.9;
   }
 
@@ -481,16 +452,13 @@ body{
 
 
   @media screen and (max-width: 1200px) {
-    .about-us .row .content-left .cover-image{
+
+    /* .about-us .row .content-left .cover-image{
       width: 90%;
     }
     .about-us .row .content-right .cover-image{
       width: 90%;
-    }
-
-    .about-us{
-      height: 650px;
-    }
+    } */
   }
 
   @media screen and (max-width: 991px) {
@@ -504,48 +472,40 @@ body{
       width: 85%;
     }
 
-    .about-us .row .content-left .cover-image{
-      width: 95%;
-      height: 300px;
-    }
-
     .about-us .row .content-left .cover-image img{
-      width: 300px;
-      margin: 10px 0 0 -30px;
+      width: 350px;
+      margin: 0 0 0 -30px;
     }
 
-    .about-us .row .content-right .cover-image{
-      width: 95%;
-      height: 300px;
+    .about-us .row .content-left .title{
+      transform: translate(80px, -70px);
+      padding: 25px;
     }
 
     .about-us .row .content-right .cover-image img{
-      width: 280px;
-      margin: 30px 0 0 -10px;
+      width: 350px;
+      margin: 0 0 0 -30px;
     }
 
-    .about-us{
-      height: 550px;
+    .about-us .row .content-right .title{
+      transform: translate(-50px, -70px);
+      padding: 25px;
     }
 
     .about-us .row .content-left .title h4{
-      font-size: 20px;
+      font-size: 26px;
     }
-
+  
     .about-us .row .content-left .title h5{
-      font-size: 16px;
+      font-size: 18px;
     }
 
     .about-us .row .content-right .title h4{
-      font-size: 20px;
+      font-size: 26px;
     }
 
     .about-us .row .content-right .title h5{
-      font-size: 16px;
-    }
-
-    .about-us .row .content-center .title h2{
-      font-size: 28px;
+      font-size: 18px;
     }
   }
 
@@ -565,42 +525,57 @@ body{
 
     .about-us{
       height: fit-content;
-      padding: 0 0 70px 0;
+      padding: 70px 0;
     }
 
     .about-us .row{
-      width: 100%;
       flex-direction: row;
-      gap: 60px 25px;
+      gap: 60px 30px;
       margin: 0 -24px 0 0;
     }
 
-    .about-us .row .content-center{
-      width: 100%;
-      order: -1;
-      padding: 30px 0;
+    .about-us .row .content-left{
+      width: calc(50% - 15px);
     }
 
-    .about-us .row .content-left{
-      width: calc(50% - 30px);
-      padding: 0;
-      position: static;
+    .about-us .row .content-left .cover-image img{
+      width: 280px;
+      margin: 0 0 0 -30px;
+    }
+
+    .about-us .row .content-left .title{
+      transform: translate(40px, -70px);
+      padding: 25px;
     }
 
     .about-us .row .content-right{
-      width: calc(50% - 30px);
-      padding: 0;
-    }
-
-    .about-us .row .content-right::after{
-      background-color: transparent;
-      width: 100%;
-      height: 100%;
+      width: calc(50% - 15px);
     }
 
     .about-us .row .content-right .cover-image img{
       width: 280px;
-      margin: 30px 0 0 20px;
+      margin: 0 0 0 -30px;
+    }
+
+    .about-us .row .content-right .title{
+      transform: translate(-20px, -70px);
+      padding: 25px;
+    }
+
+    .about-us .row .content-left .title h4{
+      font-size: 22px;
+    }
+  
+    .about-us .row .content-left .title h5{
+      font-size: 16px;
+    }
+
+    .about-us .row .content-right .title h4{
+      font-size: 22px;
+    }
+
+    .about-us .row .content-right .title h5{
+      font-size: 16px;
     }
 
     .brand {
@@ -618,21 +593,67 @@ body{
       height: 140px;
     }
 
+    .about-us .title h2{
+      font-size: 32px;
+    }
+  
+    .about-us .title h2::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('../src/assets/elemen/bg-text3.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 9px;
+      right: -5px;
+      z-index: -1;
+    }
+
+    .about-us .row{
+      gap: 20px 10px;
+    }
+
     .about-us .row .content-left{
-      width: 80%;
+      width: 100%;
     }
     .about-us .row .content-right{
-      width: 80%;
+      width: 100%;
     }
 
     .about-us .row .content-left .cover-image img{
-      width: 350px;
-      margin: 10px 0 0 -20px;
+      width: 80%;
     }
 
     .about-us .row .content-right .cover-image img{
-      width: 400px;
-      margin: 20px 0 0 -20px;
+      width: 80%;
+    }
+
+    .about-us .row .content-left .title{
+      transform: translate(180px, -70px);
+      padding: 25px;
+    }
+
+    .about-us .row .content-right .title{
+      transform: translate(-90px, -70px);
+      padding: 25px;
+    }
+
+    
+    .about-us .row .content-left .title h4{
+      font-size: 24px;
+    }
+  
+    .about-us .row .content-left .title h5{
+      font-size: 16px;
+    }
+
+    .about-us .row .content-right .title h4{
+      font-size: 24px;
+    }
+
+    .about-us .row .content-right .title h5{
+      font-size: 16px;
     }
     
     .brand::after{
@@ -649,6 +670,18 @@ body{
   
     .brand .container .row .title h2::after{
       top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 440px){
+    .about-us .row .content-left .title{
+      transform: translate(100px, -70px);
+      padding: 25px;
+    }
+
+    .about-us .row .content-right .title{
+      transform: translate(-20px, -70px);
+      padding: 25px;
     }
   }
 
@@ -669,6 +702,11 @@ body{
       font-size: 14px;
     }
 
+    .about-us .title h2{
+      padding: 10px 30px;
+      font-size: 30px;
+    }
+
     .about-us .row .content-left{
       width: 100%;
     }
@@ -676,13 +714,37 @@ body{
       width: 100%;
     }
     .about-us .row .content-left .cover-image img{
-      width: 350px;
-      margin: 10px 0 0 -50px;
+      width: 85%;
     }
 
     .about-us .row .content-right .cover-image img{
-      width: 400px;
-      margin: 20px 0 0 -50px;
+      width: 85%;
+    }
+
+    .about-us .row .content-left .title{
+      transform: translate(90px, -70px);
+      padding: 20px;
+    }
+
+    .about-us .row .content-right .title{
+      transform: translate(-40px, -70px);
+      padding: 20px;
+    }
+    
+    .about-us .row .content-left .title h4{
+      font-size: 18px;
+    }
+  
+    .about-us .row .content-left .title h5{
+      font-size: 14px;
+    }
+
+    .about-us .row .content-right .title h4{
+      font-size: 18px;
+    }
+
+    .about-us .row .content-right .title h5{
+      font-size: 14px;
     }
 
     .brand .container .row .title h2::before{
@@ -696,5 +758,16 @@ body{
     .footer .container .text-center p{
       font-size: 11px;
     }
-  
+  }
+
+  @media screen and (max-width: 320px){
+    .about-us .row .content-left .title{
+      transform: translate(50px, -70px);
+      padding: 20px;
+    }
+
+    .about-us .row .content-right .title{
+      transform: translate(-10px, -70px);
+      padding: 20px;
+    }
   }

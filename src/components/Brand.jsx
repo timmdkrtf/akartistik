@@ -9,7 +9,7 @@ export default function Brand(){
                         <h2>Brand Kami</h2>
                     </div>
                     <div className="content">
-                        <a href="https://kisahkisa.co.id" target="_blank">
+                        <a target="_blank">
                             <img src={KisahkisaLogo} alt="" />
                         </a>
                     </div>
