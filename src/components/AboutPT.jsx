@@ -7,8 +7,9 @@ export default function AboutPT(){
                 <div className="content">
                     <h2>Tentang Kami</h2>
                     <div className="text">
-                        <p>PT Abdi Saji Kuliner adalah perusahaan yang bergerak di bidang penyediaan makanan dan minuman. Sebagai anak perusahaan dari PT Thamrin Meyer Corporation, perusahaan ini berkomitmen untuk menghadirkan produk berkualitas dengan standar tinggi di industri kuliner. Dengan dukungan manajemen yang profesional, PT Abdi Saji Kuliner terus berkembang dan berinovasi untuk memenuhi kebutuhan konsumen.</p>
-                        <p>Perusahaan ini mengelola satu brand utama, Sajiner, yang menawarkan berbagai pilihan makanan dan minuman lezat. Sajiner hadir dengan konsep yang mengutamakan kualitas rasa, kebersihan, dan kepuasan pelanggan. Melalui inovasi berkelanjutan, PT Abdi Saji Kuliner berupaya menghadirkan produk yang tidak hanya menggugah selera, tetapi juga memberikan nilai lebih bagi masyarakat.</p>
+                        <p>PT Abdi Karya Artistik didirikan pada tahun 2024. Kami adalah perusahaan yang bergerak di bidang <span className="fst-italic">fashion</span> muslimah dan merupakan anak perusahaan dari Thamrin Meyer Corporation.</p>
+                        <p>Dengan visi menghadirkan busana yang sesuai dengan nilai-nilai Islam, kami berkomitmen untuk menciptakan pakaian yang tidak hanya anggun dan nyaman, tetapi juga sesuai syariah.</p>
+                        <p>Melalui brand Kisahkisa, kami hadir sebagai <span className="fst-italic">brand fashion</span> muslimah yang modern, elegan, dan tetap mengutamakan kesantunan. Dengan desain yang indah dan material berkualitas, Kisahkisa hadir untuk mendukung muslimah dalam berbusana sesuai syariah tanpa mengesampingkan gaya dan kenyamanan.</p>
                     </div>
                 </div>
             </div>
