@@ -1,4 +1,4 @@
-.landing {
+/* .landing {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -20,7 +20,7 @@
 
 .landing .content img{
   width: 250px;
-}
+} */
 
 body{
     margin: 0;
@@ -756,6 +756,10 @@ body{
     }
 
     .footer .container .text-center p{
+      font-size: 11px;
+    }
+
+    footer .bottom p{
       font-size: 11px;
     }
   }
