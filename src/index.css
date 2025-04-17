@@ -138,6 +138,7 @@ body{
     content: "";
     position: absolute;
     background-image: url("../src/assets/elemen/elemen1.png");
+    background-repeat: no-repeat;
     transform: scale(-1);
     width: 150px;
     height: 139px;
