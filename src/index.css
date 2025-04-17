@@ -134,6 +134,18 @@ body{
     position: relative;
   }
 
+  .about-pt::after{
+    content: "";
+    position: absolute;
+    background-image: url("../src/assets/elemen/elemen1.png");
+    transform: scale(-1);
+    width: 150px;
+    height: 139px;
+    background-size: contain;
+    top: 0;
+    right: 0;
+  }
+
   .about-pt .container{
     display: flex;
     flex-direction: column;
@@ -326,20 +338,33 @@ body{
   }
 
   .brand {
-    padding: 130px 0 180px 0;
+    padding: 100px 0 150px 0;
     position: relative;
+  }
+
+  .brand::before{
+    content: "";
+    position: absolute;
+    background-image: url('../src/assets/elemen/elemen2.png');
+    width: 180px;
+    height:167px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    transform: scale(-1);
   }
 
   .brand::after{
     content: "";
     position: absolute;
     background-image: url('../src/assets/elemen/elemen1.png');
-    width: 120px;
-    height: 80px;
+    width: 180px;
+    height:167px;
     background-size: contain;
     background-repeat: no-repeat;
-    right: 15px;
-    bottom: 15px;
+    left: 0;
+    bottom: 0;
   }
   
   .brand .container .row{
@@ -364,7 +389,7 @@ body{
   .brand .container .row .title h2::before{
     content: "";
     position: absolute;
-    background-image: url('../src/assets/elemen/tringale-right-orange.png');
+    background-image: url('../src/assets/elemen/tringale-right-cream.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -376,7 +401,7 @@ body{
   .brand .container .row .title h2::after{
     content: "";
     position: absolute;
-    background-image: url('../src/assets/elemen/tringale-right-orange.png');
+    background-image: url('../src/assets/elemen/tringale-right-cream.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -519,6 +544,13 @@ body{
       background-position: 25% 80%;
     }
 
+    .about-pt::after{
+      width: 120px;
+      height: 111px;
+      top: 0;
+      right: 0;
+    }
+
     .about-pt .content h2::before{
       display: none;
     }
@@ -656,12 +688,14 @@ body{
       font-size: 16px;
     }
     
+    .brand::before{
+      width: 130px;
+      height: 123px;
+    }
+
     .brand::after{
-      content: "";
-      position: absolute;
-      background-image: url('../src/assets/elemen/elemen1.png');
-      width: 100px;
-      height: 70px;
+      width: 130px;
+      height: 123px;
     }
 
     .brand .container .row .title h2::before{
@@ -674,6 +708,13 @@ body{
   }
 
   @media screen and (max-width: 440px){
+    .about-pt::after{
+      width: 100px;
+      height: 93px;
+      top: 0;
+      right: 0;
+    }
+
     .about-us .row .content-left .title{
       transform: translate(100px, -70px);
       padding: 25px;
@@ -745,6 +786,16 @@ body{
 
     .about-us .row .content-right .title h5{
       font-size: 14px;
+    }
+
+    .brand::before{
+      width: 100px;
+      height: 90px;
+    }
+
+    .brand::after{
+      width: 100px;
+      height: 90px;
     }
 
     .brand .container .row .title h2::before{
