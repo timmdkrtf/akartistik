@@ -627,9 +627,9 @@ body{
       height: 100dvh;
     }
 
-    .cover .content-container .content-center{
+    /* .cover .content-container .content-center{
       transform: translateY(-50px);
-    }
+    } */
 
     .cover .slider-container img {
       height: 140px;
